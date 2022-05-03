@@ -161,12 +161,11 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-style: italic;
     font-weight: bold;
-    font-size: x-large;
+    font-size: xx-large;
     color: #566de1;
     position: absolute;
     left: 36%;
     top: 260px;
-
 }
 
 .icono_branding {
@@ -182,7 +181,7 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-style: italic;
     font-weight: bold;
-    font-size: x-large;
+    font-size: xx-large;
     color: #566de1;
     position: absolute;
     left: 36%;
@@ -201,7 +200,7 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-style: italic;
     font-weight: bold;
-    font-size: x-large;
+    font-size: xx-large;
     color: #566de1;
     position: absolute;
     right: 12%;
@@ -222,7 +221,7 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-style: italic;
     font-weight: bold;
-    font-size: x-large;
+    font-size: xx-large;
     color: #566de1;
     position: absolute;
     right: 12%;
@@ -245,9 +244,10 @@ body {
     grid-template-rows: repeat(2, 1fr);
     background-color: #f6ffa4;
     flex-direction: column;
-}
+    overflow: hidden;
+    }
 
-.contenido_item{
+.contenido_item:hover {
     text-align: center;
     justify-content: center;
     align-items: center;
@@ -256,12 +256,9 @@ body {
     border: 1px solid white;
     padding: 250px 10px 10px 10px;
     overflow: hidden;
+    transform: translate(6px) scale(1);
     
-    
-    
-
-
-}
+    }
 
 /* codigo de la pagina Sobre mi */
 
