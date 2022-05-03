@@ -1,0 +1,623 @@
+*{ /*selector_universa */ 
+    margin: 0;  
+    padding: 0;
+   box-sizing: border-box;
+}
+
+/* Codigo de la pagina Index */
+ 
+.banner_principal {
+    height: 900px;
+    background-image: url(../imagenes/Background-index.png);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+}
+
+
+.derechos_reservados {
+    text-align: left;
+    color: #332f09;
+    padding: auto;
+    background-color: #ffffff;
+    width: 100%;
+    height: 60px;
+    position: absolute;
+    margin: auto;
+    padding-top: 2rem;
+
+    
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #332f09;
+    
+}
+
+.header {
+    background-color: #ffffff;
+    width: 100%;
+    position: absolute;
+    z-index: 90px
+          
+}
+
+/* Aplicando flexbox a la nav */
+
+.nav {
+    display: flex;
+    float: right;
+    font-weight: 400;
+    font-size: 130%;
+    border: solid 1px #ffffff;
+    box-shadow: 0px 0px 4px #979797;
+    width: 100%;
+    flex-direction: row;
+    justify-content: flex-end;
+
+        
+}
+
+
+.nav_ul {
+    list-style: none;
+    overflow: hidden;
+    height: 50px;
+    
+    
+
+}
+
+.nav_ul_li {
+    list-style: none;
+    float: left;
+    margin-left: 50px;
+    padding-right: 2rem;
+    padding-top: 1rem;
+    
+
+}
+
+.nav_ul_li_a {
+    display: block; 
+    color: #332f09;
+    text-decoration: none;
+    
+    }
+
+#posicion_adelante {
+    width: auto;
+    height: auto;
+    position: relative;
+    overflow: hidden;  
+}  
+     
+/* Aplicando flexbox en el footer del index */
+
+.redes_sociales {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    overflow: hidden;
+            
+}
+
+/* Aplicando Flexbox en el main del index */
+
+.index_portada{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content:left;
+    margin-left: 35%;
+    overflow: hidden;
+
+}
+
+.texto_portfolio{
+    text-align: center;
+    font-weight: 750;
+    font-size: 800%;
+    margin-top: 26%;
+    margin-right: 120%;
+    color: #566de1;
+
+}
+
+.texto_nombre{
+    text-align: center;
+    font-weight: 500;
+    font-size: 350%;
+    margin-right: 109%;
+    
+}
+
+/* Codigo de la pagina de Contenido */
+
+.banner_contenido {
+    height: 900px;
+    background-color: #f6ffa4;
+    background-size: cover;
+    background-position: center;
+    width: 100%; 
+}
+
+.icono_ui {
+    width: 50%; 
+    height: auto;
+    position: absolute;
+    left: 1px;
+    }
+
+.texto_ui {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    font-size: x-large;
+    color: #566de1;
+    position: absolute;
+    left: 36%;
+    top: 260px;
+
+}
+
+.icono_branding {
+    width: 50%; 
+    height: auto;
+    position: absolute;
+    top: 400px;
+    left: 1px;
+
+}
+
+.texto_branding {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    font-size: x-large;
+    color: #566de1;
+    position: absolute;
+    left: 36%;
+    top: 660px;
+}
+
+.icono_editorial {
+    width: 50%; 
+    height: auto;
+    position: absolute;
+    top: 2px;
+    right: 70px;
+}
+
+.texto_editorial {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    font-size: x-large;
+    color: #566de1;
+    position: absolute;
+    right: 12%;
+    top: 260px;
+    overflow: hidden;
+}
+
+.icono_fotografia {
+    width: 50%; 
+    height: auto;
+    position: absolute;
+    top: 400px;
+    right: 70px;
+}
+
+.texto_fotografia {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    font-size: x-large;
+    color: #566de1;
+    position: absolute;
+    right: 12%;
+    top: 660px;
+}
+
+.seccion_grid{
+    padding: 100px 1rem;
+    min-height: 100vh;
+    background-color: #f6ffa4;
+    color: #566de1;
+
+}
+
+/* Aplicando Grids en la pagina de Contenido */
+
+.contenido_grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    background-color: #f6ffa4;
+    flex-direction: column;
+}
+
+.contenido_item{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+    font-weight: 500;
+    border: 1px solid white;
+    padding: 250px 10px 10px 10px;
+    overflow: hidden;
+    
+    
+    
+
+
+}
+
+/* codigo de la pagina Sobre mi */
+
+.banner_sobre_mi {
+    height: 900px;
+    background-image: url(../imagenes/background-rosado.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 1350px; 
+}
+
+.mi {
+    width: 20%; 
+    height: auto;
+    position: absolute;
+    top: 250px;
+    margin: 5px 10px 15px 60px;
+    border: solid 2px #f6ffa4;
+    box-shadow: 10px 5px 5px #979797;
+}
+
+.titulo_sobre_mi {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: initial;
+    font-weight: bold;
+    font-size: x-large;
+    color: #332f09;
+    text-align: left;
+    margin-left: 95px;
+    position: absolute;
+    top: 535px;
+    overflow: hidden;
+}
+
+.subtitulo_sobre_mi {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    font-size: larger;
+    text-align: center;
+    color: #566de1;
+    position: absolute;
+    margin-left: 115px;
+    top: 565px;
+}
+
+.parrafo1_mi {
+    font-style: normal;
+    font-size: smaller;
+    text-align: justify;
+    color: #332f09;
+    position: absolute;
+    margin-right: 100px;
+    margin-left: 550px;
+    top: 150px;
+    line-height: 22px;
+    overflow: hidden;
+}
+
+.subtitulo3_mi {
+    font-style: normal;
+    font-size: small;
+    text-align: justify;
+    color: #332f09;
+    position: absolute;
+    margin-left: 550px;
+    margin-right: 600px;
+    margin-top: 20%;
+    overflow: hidden;
+    
+}
+
+.subtitulo4_mi {
+    font-style: normal;
+    font-size: small;
+    text-align: justify;
+    color: #332f09;
+    position: absolute;
+    margin-left: 550px;
+    margin-right: 600px;
+    margin-top: 31%;
+    overflow: hidden;
+    
+}
+
+.parrafo2_mi {
+    font-style: normal;
+    font-size: smaller;
+    text-align: justify;
+    color: #332f09;
+    position: absolute;
+    margin-right: 100px;
+    margin-left: 550px;
+    top: 300px;
+    line-height: 22px;
+    overflow: hidden;
+}
+
+.parrafo3_mi {
+    font-style: normal;
+    font-size: smaller;
+    text-align: justify;
+    color: #332f09;
+    position: absolute;
+    margin-right: 100px;
+    margin-left: 550px;
+    top: 450px;
+    line-height: 22px;
+    overflow: hidden;
+
+}
+
+.ilustrador_logo {
+    width: 5%;
+    height: auto;
+    position: absolute;
+    top: 650px;
+    margin-left: 990px;
+}
+
+.photoshop_logo {
+    width: 5%;
+    height: auto;
+    position: absolute;
+    top: 650px;
+    right: 15%;
+
+}
+
+.xd_logo {
+    width: 5%;
+    height: auto;
+    position: absolute;
+    top: 650px;
+    margin-left: 900px;
+    margin-right: 800px;
+
+}
+
+/* Codigo de la pagina de Proyectos */
+
+.banner_proyectos {
+    height: 900px;
+    background-image: url("../imagenes/background-blanco.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 1350px;
+}
+
+.banner_regina {
+    width: 40%; 
+    height: auto;
+    position: absolute;
+    top: 100px;
+    margin-left: 600px;
+    margin-right: 400px;
+       
+}
+
+.mockup_regina {
+    width: 40%;
+    height: auto;
+    position: absolute;
+    top: 500px;
+    margin-left: 700px;
+    margin-right: 800px;
+}
+
+.titulo_proyectos {
+    font-style: initial;
+    font-weight: bold;
+    font-size: x-large;
+    color: #332f09;
+    text-align: left;
+    margin-left: 200px;
+    position: absolute;
+    top: 100px;
+    overflow: hidden;
+}
+
+.subtitulo_proyectos {
+    font-style: italic;
+    font-size: larger;
+    text-align: center;
+    color: #566de1;
+    position: absolute;
+    margin-left: 210px;
+    top: 130px;
+}
+
+.parrafo_proyectos {
+    font-style: normal;
+    font-size: medium;
+    text-align: justify;
+    color: #332f09;
+    position: absolute;
+    margin-right: 900px;
+    margin-left: 90px;
+    top: 200px;
+    line-height: 22px;
+    overflow: hidden;
+}
+
+
+
+/* Codigo de la pagina de Contacto */
+
+.banner_contacto {
+    height: 900px;
+    background-image: url("../imagenes/background-amarillo.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 1350px;
+}
+
+.formulario {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 5%;
+    height: auto;
+    position: absolute;
+    top: 325px;
+    margin: 5px 10px 15px 800px;
+    border: solid #f6ffa4;
+    box-shadow: 5px 10px 10px 10px #979797; 
+    padding-left: 2%;
+    padding-right: 26%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    
+}
+
+.buzon {
+    width: 40%; 
+    height: auto;
+    position: absolute;
+    top: 108px;
+    margin: 5px 10px 15px 60px;
+}
+
+.frase_contacto {
+    font-style: italic;
+    font-weight: 400;
+    font-size: x-large;
+    color: #332f09;
+    text-align: left;
+    margin-left: 90px;
+    margin-right: 700px;
+    position: absolute;
+    top: 530px;
+    line-height: 150%;
+}
+
+.autor_frase {
+    font-style: initial;
+    font-weight: lighter;
+    font-size: x-large;
+    color: #566de1;
+    text-align: left;
+    margin-left: 450px;
+    position: absolute;
+    top: 610px;
+    overflow: hidden;
+}
+
+.menu{
+    display: none;
+}
+
+/* Media Queries */
+/* Vistas menores a 1024px */
+@media screen and (max-width: 1024px) {
+    .banner_principal {
+        background-image: url(../imagenes/Background-index-1024.png);
+        
+}
+
+.texto_portfolio{
+    margin-top: 46%;
+    font-size: 600%;
+}
+
+.texto_nombre{
+    margin-right: 134%;
+    font-size: 260%;
+    margin-right: 128%;
+}
+
+
+.header{
+    flex-direction: row;
+    font-size: small;
+
+}
+
+.contenido_item{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    padding: 25px 10px 10px 10px;
+  
+}
+
+
+/* Vistas menores a 600px */
+@media screen and (max-width: 600px) {
+    .banner_principal {
+        background-image: url(../imagenes/Background-index-320.png);
+        
+}  
+
+.texto_portfolio{
+    margin-top: 128%;
+    font-size: 290%;
+}
+
+.texto_nombre{
+    margin-right: 134%;
+    font-size: 120%;
+    margin-right: 100%;
+}
+
+
+.header{
+    display: flex;
+    flex-direction: row;
+}
+
+.nav_ul_li_a{
+    display: none;
+
+}
+
+.nav{
+    flex-direction: row-reverse;
+    padding-right: 20px;
+    padding-top: 10px;
+    color: #332f09;
+
+}
+    
+.menu{
+    display: block;
+}
+
+.seccion_grid{
+    align-content: center;
+    justify-content: center;
+
+}
+
+.contenido_item{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    padding: 25px 10px 10px 10px;
+  
+}
+
+.contenido_grid{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    flex-direction: column;  
+}
+
+}
