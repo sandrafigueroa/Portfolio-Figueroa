@@ -5,7 +5,7 @@
 }
 
 /* Codigo de la pagina Index */
- 
+
 .banner_principal {
     height: 900px;
     background-image: url(../imagenes/Background-index.png);
@@ -239,7 +239,8 @@ body {
 }
 
 .seccion_grid{
-    padding: 100px 1rem;
+    padding: 300px 2rem;
+    gap: 20rem;
     min-height: 100vh;
     background-color: #f6ffa4;
     color: #566de1;
@@ -255,6 +256,7 @@ body {
     background-color: #f6ffa4;
     flex-direction: column;
     overflow: hidden;
+    row-gap: 150px;
     }
 
 .contenido_item:hover {
@@ -407,11 +409,39 @@ body {
 
 }
 
+.col-12{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #ffffff;
+    justify-content: space-evenly;
+    
+}
+
+.col-8{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #ffffff;
+    justify-content: space-evenly;
+  
+    
+}
+
+.col{
+    background-color: #ffffff;
+}
+
+.table{
+    background-color: #f6ffa4;
+
+}
+
 /* Codigo de la pagina de Proyectos */
 
 .banner_proyectos {
     height: 900px;
-    background-image: url("../imagenes/background-blanco.jpg");
+    background-color: #566de1;
     background-size: cover;
     background-position: center;
     width: 1350px;
@@ -477,64 +507,73 @@ body {
 
 .banner_contacto {
     height: 900px;
-    background-image: url("../imagenes/background-amarillo.jpg");
     background-size: cover;
     background-position: center;
-    width: 1350px;
+    width: 100%;
 }
 
-.formulario {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    width: 5%;
-    height: auto;
-    position: absolute;
-    top: 325px;
-    margin: 5px 10px 15px 800px;
-    border: solid #f6ffa4;
-    box-shadow: 5px 10px 10px 10px #979797; 
-    padding-left: 2%;
-    padding-right: 26%;
-    padding-top: 2%;
-    padding-bottom: 2%;
+.frase{
+    display: flex;
+    flex-direction: row;
+    margin-left: 5%;
+    margin-right: 5%;
+    
+    
+
+}
+
+.autora{
+    display: flex;
+    flex-direction: row;
+    margin-left: 5%;
+    color: #566de1;
     
 }
 
-.buzon {
-    width: 40%; 
-    height: auto;
-    position: absolute;
-    top: 108px;
-    margin: 5px 10px 15px 60px;
+
+.myForm{
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    border-radius: 3px;
+    box-shadow: #979797;
+    padding: 1.8em;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
-.frase_contacto {
-    font-style: italic;
-    font-weight: 400;
-    font-size: x-large;
-    color: #332f09;
-    text-align: left;
-    margin-left: 90px;
-    margin-right: 700px;
-    position: absolute;
-    top: 530px;
-    line-height: 150%;
+.message{
+    display: flex;
+    flex-direction: column;
+    order: 2;
 }
 
-.autor_frase {
-    font-style: initial;
-    font-weight: lighter;
-    font-size: x-large;
-    color: #566de1;
-    text-align: left;
-    margin-left: 450px;
-    position: absolute;
-    top: 610px;
-    overflow: hidden;
+.message > textarea{
+    flex: 1; 
+    min-width: 18rem;
+
 }
 
-.menu{
-    display: none;
+.contact{
+    flex: 1; 
+    order: 1;
+    margin-right: 2em; 
 }
+
+.contact input{
+    width: 100%;
+}
+
+.contact button{
+    padding: 1em;
+    margin-bottom: 1em;
+}
+
+.contact button{
+    background: gray;
+    color: white;
+    border: 0;
+}
+    
 
 /* Media Queries */
 /* Vistas menores a 1024px */
@@ -555,7 +594,6 @@ body {
     margin-right: 128%;
 }
 
-
 .header{
     flex-direction: row;
     font-size: small;
@@ -573,17 +611,15 @@ body {
 
 .contenido_grid{
     display: grid;
-    grid-template-columns:repeat(2, 0.2fr);
-    grid-template-rows: repeat(2, 0.2fr);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     flex-direction: column; 
     justify-content: center;
-    align-content: center;
-    padding-left: 61%;
-    padding-right: 50%;
-    
-    
-    
+    align-content: center;     
+  
 }
+
+
 
 
 /* Vistas menores a 600px */
@@ -603,7 +639,6 @@ body {
     font-size: 120%;
     margin-right: 100%;
 }
-
 
 .header{
     display: flex;
@@ -632,29 +667,48 @@ body {
     align-content: center;
     justify-content: center;
     
-
-
+  
 }
 
 .contenido_item{
     display: grid;
     justify-content: center;
     align-content: center;
-    
-     
+  
 }
 
 .contenido_grid{
     display: grid;
-    grid-template-columns:repeat(1, 1fr);
     grid-template-rows: repeat(1, 1fr);
     flex-direction: column; 
     justify-content: center;
     align-content: center;
+    padding-left: 100%;
+       
+}
+
+.message > textarea{
+    flex: 1; 
+    min-width: 2rem;
+
+}
+
+.message{
+    display: flex;
+    flex-direction: column;
+    order: 2;
     
 }
 
-
+.myForm{
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    border-radius: 3px;
+    box-shadow: #979797;
+    padding: 2rem;
+    padding-left: 1rem;
+    
+}
 
 }
 
