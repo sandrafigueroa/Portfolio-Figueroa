@@ -1,0 +1,38 @@
+.banner_principal {
+    height: 900px;
+    background-image: url(../imagenes/Background-index.png);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    .index_portada{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content:left;
+        margin-left: 35%;
+        overflow: hidden;
+    
+    }
+    .texto_portfolio{
+        text-align: center;
+        font-weight: 750;
+        font-size: 800%;
+        margin-top: 26%;
+        margin-right: 120%;
+        color: #566de1;
+        background-image: linear-gradient(45deg, #e5d2ce, #ffffff);
+        border-color: #ffffff;
+        border-style: dashed;
+         
+    
+    }
+    .texto_nombre{
+        text-align: center;
+        font-weight: 500;
+        font-size: 350%;
+        margin-right: 109%;
+       
+        
+    }
+
+}
