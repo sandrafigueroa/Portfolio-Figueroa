@@ -1,8 +1,8 @@
-*{ /*selector_universa */ 
-    margin: 0;  
-    padding: 0;
-   box-sizing: border-box;
-}
-
+@import "variables";
 @import "header";
 @import "index";
+@import "footer";
+@import "contenido";
+@import "sobre_mi";
+@import "proyectos";
+@import "contacto";

@@ -1,12 +1,8 @@
-$texto: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-$color_uno: #332f09;
-$color_dos: #566de1;
-
-
 .header {
-    background-color: #ffffff;
-    width: 100%;
-    position: absolute;
-    z-index: 90px
-             
+    background-color: map-get($colores, color_cinco);
+    width: 100%;  
+    font-family: $texto;  
+    color: $color_uno;
+    font-weight: bold; 
+          
 }

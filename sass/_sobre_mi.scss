@@ -1,0 +1,42 @@
+.sobre_mi {
+    height: 900px;
+    background-size: cover;
+    width: 100%; 
+    background-image: url(../imagenes/background-rosado.jpg);
+
+
+    &_main{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 30px;
+        
+        &_uno{
+            padding-left: 60px;  
+            padding-top: 70px;                                   
+        }
+
+        &_dos{
+            padding-right: 90px;
+            padding-top: 80px;
+            font-size: medium; 
+            font-weight: 500;
+            color: $color_uno; 
+            text-align: justify;
+                       
+        }
+
+        &_tres{
+            justify-items: stretch;
+            padding-left: 60px;
+        }
+
+        &_cuatro{
+            font-size: medium;
+            list-style: none;
+        }
+    }
+}
+
+
+

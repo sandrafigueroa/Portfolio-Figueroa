@@ -1,0 +1,31 @@
+/* Aplicando Grids en la pagina de Contenido */
+
+.section{
+    background-color: map-get($colores, color_cuatro);
+    color: $color_dos;
+    font-size: large;
+    font-weight: 300;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    
+    
+    &_grid{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        justify-items: center;
+        align-items: center;
+        gap: 50px;
+
+        
+        
+        &_item:hover {
+            padding: 100px 5px 5px 5px;
+            transform: translate(6px) scale(1);
+            overflow: hidden;
+            }
+
+        }
+
+}
+

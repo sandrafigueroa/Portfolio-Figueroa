@@ -1,0 +1,13 @@
+.banner_proyectos {
+    height: 1420px;
+    font-family: $texto;
+    color: $color_uno;
+    @extend .sobre_mi
+   
+}
+
+.col-lg{
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: justify;
+}

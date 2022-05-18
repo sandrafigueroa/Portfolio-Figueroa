@@ -1,0 +1,35 @@
+*{ /*selector_universa */ 
+    margin: 0;  
+    padding: 0;
+   box-sizing: border-box;
+}
+
+// Aplicando variables
+$texto: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+$color_uno: #332f09;
+$color_dos: #566de1;
+$color_tres: #e4d1cd;
+$color_cuatro: #f6ffa4;
+$color_cinco: #ffffff;
+$b_size: cover;
+$b_position: center;
+$ancho_b: 100%;
+
+// Aplicando mixin
+
+@mixin banner {
+    height: 900px;
+    width: 100%;
+    background-size: cover;
+    background-color: #f6ffa4;
+}
+
+// Aplicando Maps
+$colores: (
+    color_uno: #332f09,
+    color_dos: #566de1,
+    color_tres: #e4d1cd,
+    color_cuatro: #f6ffa4,
+    color_cinco: #ffffff,
+)
+

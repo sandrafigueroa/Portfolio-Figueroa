@@ -1,0 +1,42 @@
+.contacto {
+    height: 900px;
+    width: 100%;
+    background-size: cover;
+    background-color: #f6ffa4;
+    
+
+    &_grid{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        gap: 30px;
+
+
+        &_buzon{
+            padding-left: 50px;
+            padding-top: 90px;
+        }
+
+        &_frase{
+            padding-top: 250px;
+            padding-right: 50px;
+
+            &_autora{
+                color: $color_dos;
+                font-weight: 500;
+            }
+        }
+
+        &_form{
+            padding-left: 90px; 
+            background-color: rgb(255, 255, 255); 
+            padding-right: 142%;
+            margin-left: 2%;
+            padding-top: 2%;
+            padding-bottom: 2%;
+            box-shadow: 0 20px 30px #000000(0, 0, 0, 0.2);                                   
+        }
+
+    }
+}
+
