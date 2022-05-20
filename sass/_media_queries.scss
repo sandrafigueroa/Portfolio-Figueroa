@@ -1,0 +1,250 @@
+@media screen and (max-width: 1024px) {
+    .contacto_grid_form{
+        background-color: rgb(255, 255, 255);
+        padding-left: 50px;  
+        padding-right: 70%;
+        margin-left: 10%;
+                                                
+    } 
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .index_portada{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content:left; 
+        margin-left: 15%;
+        overflow: hidden;              
+    }
+
+    // Aplicando media queries a Contacto
+    .contacto {
+        height: 1200px;
+        width: 100%;
+        background-size: cover;
+        overflow: hidden;      
+                            
+        .contacto_grid{
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(1, 1fr);
+            
+        
+            .contacto_grid_buzon{
+                
+                padding-top: 70px;
+                padding-left: 10%;
+                                
+            }
+    
+            .contacto_grid_frase{
+                padding-top: 100px;
+                padding-left: 20%; 
+                overflow: hidden;
+    
+                .contacto_grid_frase_autora{
+                    color: $color_dos;
+                    font-weight: 500;
+                }
+            }
+    
+            .contacto_grid_form{
+                background-color: rgb(255, 255, 255);
+                padding-left: 50px;  
+                padding-right: 35%;
+                margin-right: 69%;
+                margin-left: 20%;
+                padding-bottom: 3%;
+                margin-top: 15%;
+                                                 
+            }
+    
+        }
+    }
+}
+
+
+
+@media screen and (max-width: 320px){
+    .index {
+        background-image: url(../imagenes/Background-index-320.png);
+
+                 
+        .index_portada{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content:center; 
+            margin-left: 15%;
+            overflow: hidden;
+        
+            .index_portada_portfolio{
+                text-align: center;
+                font-weight: 750;
+                font-size: 300%;
+                margin-top: 100%;
+                 margin-right: 120%;
+
+            }
+                    
+            .index_portada_nombre{
+                text-align: center;
+                font-weight: 500;
+                font-size: 150%;
+                margin-right: 109%;
+                color: $color_uno;
+                           
+            }                  
+        }
+    }
+    // Contenido
+
+    .section{
+        background-color: #f6ffa4;
+        color: #566de1;
+        font-size: small;
+        font-weight: 300;
+        padding-top: 15%;
+        padding-bottom: 5%;
+        
+        
+        .section_grid{
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(1, 1fr);
+            justify-items: center;
+            align-items: center;
+            gap: 50px;
+    
+            
+            
+            .section_grid_item:hover {
+                padding: 100px 5px 5px 5px;
+                transform: translate(6px) scale(1);
+                overflow: hidden;
+                }
+    
+            }
+    
+    }
+
+
+    // Sobre_mi
+
+    .sobre_mi {
+        height: 1400px;
+        background-size: cover;
+        width: 100%; 
+        background-image: url(../imagenes/background-rosado.jpg);
+        overflow: hidden;
+    
+    
+        .sobre_mi_main{
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(1, 1fr); 
+            
+            
+            .sobre_mi_main_uno{
+                padding-left: 10px;  
+                padding-top: 70px; 
+                                                  
+            }
+    
+            .sobre_mi_main_dos{
+                padding-right: 80px;
+                padding-left: 20%;
+                padding-top: 30px;
+                font-size: small; 
+                font-weight: 400;
+                color: $color_uno; 
+                text-align: justify;
+                           
+            }
+    
+            .sobre_mi_main_tres{
+                justify-items: center;
+                padding-left: 50px;
+                padding-right: 30%;
+                text-align: center;
+                
+                
+            }
+    
+            .sobre_mi_main_cuatro{
+                font-size: small;
+                list-style: none;
+                padding-left: 12%;
+                
+                
+                                               
+            }
+        }
+    }
+    
+
+// Contacto
+
+    .contacto {
+        height: 1200px;
+        width: 100%;
+        background-size: cover;
+        background-image: url(../imagenes/Background-index-320.png);
+              
+    
+        .contacto_grid{
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(1, 1fr);
+            
+       
+            .contacto_grid_buzon{
+                padding-top: 70px;
+                padding-left: 15%;
+                padding-right: 28%;
+                                               
+            }
+    
+            .contacto_grid_frase{
+                padding-top: 100px;
+                padding-left: 20%; 
+                padding-right: 15%;
+                overflow: hidden;
+    
+                &_autora{
+                    color: $color_dos;
+                    font-weight: 500;
+                }
+            }
+    
+            .contacto_grid_form{
+                background-color: rgb(255, 255, 255);
+                padding-left: 40px;  
+                padding-right: 70%;
+                margin-top: 15%;
+                margin-right: 60%;
+                margin-left: 12%;
+                padding-top: 5%;
+                padding-bottom: 3%;
+                                                 
+            }
+    
+        }
+    }
+    
+
+
+}
+
+
+    
+    
+    
+
+
+
+
+
