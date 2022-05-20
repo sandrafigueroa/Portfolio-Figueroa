@@ -9,18 +9,17 @@
   width: 100%;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: #332f09;
-  font-weight: bold; }
+  font-weight: 500; }
 
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: #332f09; }
 
 /* Aplicando Flexbox en el main del index */
-.index {
+.index, .contacto {
   height: 900px;
   background-image: url(../imagenes/Background-index.png);
   background-size: cover;
-  background-position: center;
   width: 100%; }
   .index_portada {
     display: flex;
@@ -49,17 +48,19 @@ body {
 .footer {
   display: flex;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  color: #332f09; }
+  color: #332f09;
+  overflow: hidden; }
   .footer .derechos_reservados {
     flex-direction: row;
-    flex-wrap: nowrap;
-    font-weight: 600; }
+    flex-wrap: wrap;
+    font-weight: 300;
+    margin-left: 10px;
+    padding-top: 10px;
+    overflow: hidden; }
   .footer .redes_sociales {
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: flex-end;
-    overflow: hidden;
-    margin-left: 75%; }
+    overflow: hidden; }
 
 /* Aplicando Grids en la pagina de Contenido */
 .section {
@@ -81,67 +82,214 @@ body {
       transform: translate(6px) scale(1);
       overflow: hidden; }
 
-.sobre_mi, .banner_proyectos {
+.sobre_mi {
   height: 900px;
   background-size: cover;
   width: 100%;
-  background-image: url(../imagenes/background-rosado.jpg); }
+  background-image: url(../imagenes/background-rosado.jpg);
+  overflow: hidden; }
   .sobre_mi_main {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 30px; }
+    grid-template-rows: repeat(2, 1fr); }
     .sobre_mi_main_uno {
-      padding-left: 60px;
+      padding-left: 50px;
       padding-top: 70px; }
     .sobre_mi_main_dos {
       padding-right: 90px;
-      padding-top: 80px;
-      font-size: medium;
-      font-weight: 500;
+      padding-top: 170px;
+      font-size: large;
+      font-weight: 400;
       color: #332f09;
       text-align: justify; }
     .sobre_mi_main_tres {
       justify-items: stretch;
-      padding-left: 60px; }
+      padding-left: 70px; }
     .sobre_mi_main_cuatro {
       font-size: medium;
       list-style: none; }
 
 .banner_proyectos {
-  height: 1420px;
+  height: auto;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  color: #332f09; }
+  color: #332f09;
+  background-color: #ffffff;
+  overflow: hidden; }
 
 .col-lg {
   padding-left: 50px;
   padding-right: 50px;
-  text-align: justify; }
+  text-align: justify;
+  overflow: hidden; }
 
 .contacto {
   height: 900px;
   width: 100%;
-  background-size: cover;
-  background-color: #f6ffa4; }
+  background-size: cover; }
   .contacto_grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(1, 1fr);
-    gap: 30px; }
+    grid-template-rows: repeat(1, 1fr); }
     .contacto_grid_buzon {
-      padding-left: 50px;
-      padding-top: 90px; }
+      padding-top: 70px;
+      padding-left: 10%; }
     .contacto_grid_frase {
-      padding-top: 250px;
-      padding-right: 50px; }
+      padding-top: 170px;
+      padding-left: 25%;
+      overflow: hidden; }
       .contacto_grid_frase_autora {
         color: #566de1;
         font-weight: 500; }
     .contacto_grid_form {
-      padding-left: 90px;
       background-color: white;
-      padding-right: 142%;
-      margin-left: 2%;
-      padding-top: 2%;
-      padding-bottom: 2%;
-      box-shadow: 0 20px 30px #000000 0, 0, 0, 0.2; }
+      padding-left: 50px;
+      padding-right: 25%;
+      margin-top: 15%;
+      margin-right: 30%;
+      margin-left: 20%;
+      padding-top: 5%;
+      padding-bottom: 3%; }
+
+@media screen and (max-width: 1024px) {
+  .contacto_grid_form {
+    background-color: white;
+    padding-left: 50px;
+    padding-right: 70%;
+    margin-left: 10%; } }
+
+@media screen and (max-width: 768px) {
+  .index_portada {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: left;
+    margin-left: 15%;
+    overflow: hidden; }
+  .contacto {
+    height: 1200px;
+    width: 100%;
+    background-size: cover;
+    overflow: hidden; }
+    .contacto .contacto_grid {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(1, 1fr); }
+      .contacto .contacto_grid .contacto_grid_buzon {
+        padding-top: 70px;
+        padding-left: 10%; }
+      .contacto .contacto_grid .contacto_grid_frase {
+        padding-top: 100px;
+        padding-left: 20%;
+        overflow: hidden; }
+        .contacto .contacto_grid .contacto_grid_frase .contacto_grid_frase_autora {
+          color: #566de1;
+          font-weight: 500; }
+      .contacto .contacto_grid .contacto_grid_form {
+        background-color: white;
+        padding-left: 50px;
+        padding-right: 35%;
+        margin-right: 69%;
+        margin-left: 20%;
+        padding-bottom: 3%;
+        margin-top: 15%; } }
+
+@media screen and (max-width: 320px) {
+  .index, .contacto {
+    background-image: url(../imagenes/Background-index-320.png); }
+    .index .index_portada, .contacto .index_portada {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-left: 15%;
+      overflow: hidden; }
+      .index .index_portada .index_portada_portfolio, .contacto .index_portada .index_portada_portfolio {
+        text-align: center;
+        font-weight: 750;
+        font-size: 300%;
+        margin-top: 100%;
+        margin-right: 120%; }
+      .index .index_portada .index_portada_nombre, .contacto .index_portada .index_portada_nombre {
+        text-align: center;
+        font-weight: 500;
+        font-size: 150%;
+        margin-right: 109%;
+        color: #332f09; }
+  .section {
+    background-color: #f6ffa4;
+    color: #566de1;
+    font-size: small;
+    font-weight: 300;
+    padding-top: 15%;
+    padding-bottom: 5%; }
+    .section .section_grid {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(1, 1fr);
+      justify-items: center;
+      align-items: center;
+      gap: 50px; }
+      .section .section_grid .section_grid_item:hover {
+        padding: 100px 5px 5px 5px;
+        transform: translate(6px) scale(1);
+        overflow: hidden; }
+  .sobre_mi {
+    height: 1400px;
+    background-size: cover;
+    width: 100%;
+    background-image: url(../imagenes/background-rosado.jpg);
+    overflow: hidden; }
+    .sobre_mi .sobre_mi_main {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(1, 1fr); }
+      .sobre_mi .sobre_mi_main .sobre_mi_main_uno {
+        padding-left: 10px;
+        padding-top: 70px; }
+      .sobre_mi .sobre_mi_main .sobre_mi_main_dos {
+        padding-right: 80px;
+        padding-left: 20%;
+        padding-top: 30px;
+        font-size: small;
+        font-weight: 400;
+        color: #332f09;
+        text-align: justify; }
+      .sobre_mi .sobre_mi_main .sobre_mi_main_tres {
+        justify-items: center;
+        padding-left: 50px;
+        padding-right: 30%;
+        text-align: center; }
+      .sobre_mi .sobre_mi_main .sobre_mi_main_cuatro {
+        font-size: small;
+        list-style: none;
+        padding-left: 12%; }
+  .contacto {
+    height: 1200px;
+    width: 100%;
+    background-size: cover;
+    background-image: url(../imagenes/Background-index-320.png); }
+    .contacto .contacto_grid {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(1, 1fr); }
+      .contacto .contacto_grid .contacto_grid_buzon {
+        padding-top: 70px;
+        padding-left: 15%;
+        padding-right: 28%; }
+      .contacto .contacto_grid .contacto_grid_frase {
+        padding-top: 100px;
+        padding-left: 20%;
+        padding-right: 15%;
+        overflow: hidden; }
+        .contacto .contacto_grid .contacto_grid_frase_autora {
+          color: #566de1;
+          font-weight: 500; }
+      .contacto .contacto_grid .contacto_grid_form {
+        background-color: white;
+        padding-left: 40px;
+        padding-right: 70%;
+        margin-top: 15%;
+        margin-right: 60%;
+        margin-left: 12%;
+        padding-top: 5%;
+        padding-bottom: 3%; } }

@@ -9,8 +9,8 @@ body {
     height: 900px;
     background-image: url(../imagenes/Background-index.png);
     background-size: $b_size;
-    background-position: $b_position;
     width: $ancho_b;
+    
 
     &_portada{
         display: flex;

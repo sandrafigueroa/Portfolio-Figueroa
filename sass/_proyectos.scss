@@ -1,8 +1,11 @@
 .banner_proyectos {
-    height: 1420px;
+    height: auto;
     font-family: $texto;
     color: $color_uno;
-    @extend .sobre_mi
+    background-color: #ffffff;
+    overflow: hidden;
+    
+    
    
 }
 
@@ -10,4 +13,5 @@
     padding-left: 50px;
     padding-right: 50px;
     text-align: justify;
+    overflow: hidden;
 }

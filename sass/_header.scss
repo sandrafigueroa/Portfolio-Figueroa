@@ -1,8 +1,4 @@
 .header {
-    background-color: map-get($colores, color_cinco);
-    width: 100%;  
-    font-family: $texto;  
-    color: $color_uno;
-    font-weight: bold; 
-          
+    @include header
+
 }

@@ -12,16 +12,16 @@ $color_tres: #e4d1cd;
 $color_cuatro: #f6ffa4;
 $color_cinco: #ffffff;
 $b_size: cover;
-$b_position: center;
 $ancho_b: 100%;
 
 // Aplicando mixin
 
-@mixin banner {
-    height: 900px;
-    width: 100%;
-    background-size: cover;
-    background-color: #f6ffa4;
+@mixin header {
+    background-color: #ffffff;
+    width: 100%;  
+    font-family: $texto;  
+    color: $color_uno;
+    font-weight: 500; 
 }
 
 // Aplicando Maps

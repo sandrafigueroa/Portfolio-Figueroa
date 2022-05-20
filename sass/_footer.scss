@@ -5,20 +5,27 @@
     display: flex;
     font-family: $texto;
     color: $color_uno;
+    overflow: hidden;
+    
     
 
     .derechos_reservados{
         flex-direction: row;
-        flex-wrap: nowrap;
-        font-weight: 600;        
+        flex-wrap: wrap;
+        font-weight: 300;
+        margin-left: 10px;
+        padding-top: 10px; 
+        overflow: hidden;
+             
     }
 
     .redes_sociales {
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: flex-end;
-        overflow: hidden; 
-        margin-left: 75%;         
+        overflow: hidden;
+        
+
+                
     }
 }
 
